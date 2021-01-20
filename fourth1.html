@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+	<title></title>
+</head>
+<body bgcolor="beige">
+	<h1 align = "center"><i><u>Welcome to Sasta Segreta</u></i></h1>
+	<h2 align = "center"><u>Q3</u></h2>
+	<br><br><br>
+	<image align = "center" src="ajji.jpeg"></image><br>
+	<p align = "center" id="clue">Who's sassier: Muk or Ajji</p><br>
+	<label align = "center" for="txt1">PUT ANS HERE:</label><br>
+	<input align = "center" type="text" id="txt1" name="txt1"><br><br>
+  	<input type="button" value="Submit me!" align = "center" id="submit" onclick="checkAns()"><br><br><br>
+  	<hr width = "2000" color = "red" align = "center" ><br><br>
+  	<span align = "center" id="answ">You wouldn't dare to get this wrong</span>
+  	<script language="javascript" type = "text/javascript">
+  		function checkAns(){
+  			var ans = document.getElementById('txt1');
+  			if(ans.value==="ajji"){
+  			document.getElementById("answ").innerHTML = '<a href="fourth1.html"><button>Duh! It has to be Ajji</button></a>'
+  			}
+  			else{
+  				document.getElementById("answ").innerHTML = 'Ajji wants to know your location *angry*'
+  			}
+
+  		}
+  	</script>
+</body>
+</html>
