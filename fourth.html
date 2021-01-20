@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title></title>
+</head>
+<body bgcolor="beige">
+<style>
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.button1 {background-color: #800080;} /* Green */
+.button2 {background-color: #00FFFF; font-size: 20px;} /* Blue */
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  margin-left: 75%;
+  margin-right: auto;
+  width: 50%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #800080;
+  overflow: hidden;
+  width: 50%;
+  height: 0;
+  transition: .5s ease;
+margin-left: 20%;
+  margin-right: auto;
+}
+
+.overlay2 {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008b8b;
+  overflow: hidden;
+  width: 50%;
+  height: 0;
+  transition: .5s ease;
+margin-left: 130%;
+  margin-right: auto;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.container:hover .overlay2 {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  white-space: wrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+</style>
+
+	<h1 align = "center"><i><u>Welcome to Sasta Segreta</u></i></h1>
+	<h2 align = "center"><u>Q3</u></h2>
+	<br><br><br>
+
+
+	<div class="container">
+  <img src="sleeping.jpeg" class="image">
+  <div class="overlay">
+    <div class="text">Guess what is in her mouth while she's sleeping.</div>
+  </div>
+
+<div class="overlay2">
+    <div class="text">Remember the time when u slept with something in your mouth?</div>
+  </div>
+</div>
+
+<br><br><br><br>
+<hr width = 400 color = "red" align = "center" ><br><br>
+
+	
+	<label class = "center" for="txt1">PUT ANS HERE:</label><br>
+	<input class = "center" type="text" id="txt1" name="txt1"><br><br>
+ 
+	<center>
+		<button class="button button1" id="submit" onclick="checkAns()">Submit me!</button> <br><br><br>
+	</center>
+  	<hr width = 200 color = "red" align = "center" ><br><br>
+	<span class = "center" id="answ"></span>
+  	
+  	<script language="javascript" type = "text/javascript">
+  		function checkAns(){
+  			var ans = document.getElementById('txt1');
+  			if(ans.value==="oreo"){
+  			document.getElementById("answ").innerHTML = '<a href="fifth.html"><button class="button2">If sleeping was an art, Muk would be Picasoo</button></a>'
+  			}
+  			else{
+  				alert('Twist,lick,dunk')
+  			}
+
+  		}
+  	</script>
+<br><br><br><br><br><br><br><br><br>
+</body>
+</html>
