@@ -6,7 +6,6 @@
 </head>
 <body bgcolor="beige">
 <style>
-
 .container {
   position: relative;
   width: 50%;
@@ -92,37 +91,6 @@ margin-left: 130%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
-
-.WelcomeMsg {
-  visibility: hidden;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: #fff;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  text-align: center;
-  border-radius: 5px;
-  padding: 16px;
-  position: fixed;
-  z-index: 1;
-  left: 40%;
-  top: 30px;
-  font-size: 17px; 
-  width: 300px;
-}
-
-WelcomeMsg.show {
-  visibility: visible;
-  animation: fadein 0.5s, fadeout 0.5s 3.5s;
-}
-
-@keyframes fadein {
-  from {top: 0; opacity: 0;}
-  to {top: 30px; opacity: 1;}
-}
-
-@keyframes fadeout {
-  from {top: 30px; opacity: 1;}
-  to {top: 0; opacity: 0;}
-}
 </style>
 
 	<h1 align = "center"><i><u>Welcome to Sasta Segreta</u></i></h1>
@@ -131,13 +99,13 @@ WelcomeMsg.show {
 
 
 	<div class="container">
-  <img src="sunilshetty.jpeg" class="image">
+  <img src="coffee.jpg" class="image">
   <div class="overlay">
-    <div class="text">SECURITY VERIFICATION:<br> please answer the question to ensure you are autorized to enter</div>
+    <div class="text">Your first love since you were a baby (Though you still are one xD)</div>
   </div>
 
 <div class="overlay2">
-    <div class="text">Only people who know Mukta can be granted access "Confidential stuff inside"</div>
+    <div class="text">Dare you try to drink it today *knife*</div>
   </div>
 </div>
 
@@ -152,28 +120,20 @@ WelcomeMsg.show {
 		<button class="button button1" id="submit" onclick="checkAns()">Submit me!</button> <br><br><br>
 	</center>
   	<hr width = 200 color = "red" align = "center" ><br><br>
-	<span class = "center" id="answ" style="font-size:20px;"></span>
-
-	
+	<span class = "center" id="answ"></span>
   	
   	<script language="javascript" type = "text/javascript">
   		function checkAns(){
   			var ans = document.getElementById('txt1');
-			
-  			if(ans.value==="same"){
-
-  			document.getElementById("answ").innerHTML = '<a href="second.html"><button class="button2">Yes, ofc you are smarter than Google (Sorry Khushi)</button></a>'
-					
-}
+  			if(ans.value==="coffee"){
+  			document.getElementById("answ").innerHTML = '<a href="second1.html"><button class="button2">Ofc how could you forget coffeeeee!</button></a>'
+  			}
   			else{
-				alert("Try Again. Microsoft can be smarter than Google")
-				
+  				alert("Try again. This felt more bitter than the coffee u drink")
   			}
 
   		}
-
-	
   	</script>
-	<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>
 </body>
 </html>
