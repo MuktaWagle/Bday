@@ -42,6 +42,13 @@ margin-left: auto;
   width: 50%;
 }
 
+.image2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
 .overlay {
   position: absolute;
   bottom: 100%;
@@ -94,18 +101,18 @@ margin-left: 130%;
 </style>
 
 	<h1 align = "center"><i><u>Welcome to Sasta Segreta</u></i></h1>
-	<h2 align = "center"><u>Q1</u></h2>
+	
 	<br><br><br>
 
 
 	<div class="container">
-  <img src="coffee.jpg" class="image">
+  <img src="beagle.jpg" class="image">
   <div class="overlay">
-    <div class="text">Your first love since you were a baby (Though you still are one xD)</div>
+    <div class="text">Mukta ke 4 gaalo ka raaz kya hai?</div>
   </div>
 
 <div class="overlay2">
-    <div class="text">Dare you try to drink it today *knife*</div>
+    <div class="text">Ye kaali kaali asakhe, ye Beagle jaise gaal</div>
   </div>
 </div>
 
@@ -120,17 +127,15 @@ margin-left: 130%;
 		<button class="button button1" id="submit" onclick="checkAns()">Submit me!</button> <br><br><br>
 	</center>
   	<hr width = 200 color = "red" align = "center" ><br><br>
-	<span class = "center" id="answ"></span>
+	<span  id="answ"></span>
   	
   	<script language="javascript" type = "text/javascript">
   		function checkAns(){
   			var ans = document.getElementById('txt1');
-  			if(ans.value==="coffee"){
-  			document.getElementById("answ").innerHTML = '<a href="second1.html"><button class="button2">Ofc how could you forget coffeeeee!</button></a>'
-  			}
-  			else{
-  				alert("Try again. This felt more bitter than the coffee u drink")
-  			}
+  			
+  			document.getElementById("answ").innerHTML = '<a href="sixth.html"><img src="baby.jpg" class="image2"></a>'
+  			
+			
 
   		}
   	</script>
