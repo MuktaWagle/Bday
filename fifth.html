@@ -6,20 +6,6 @@
 </head>
 <body bgcolor="beige">
 <style>
-
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
-
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
 .container {
   position: relative;
   width: 50%;
@@ -58,8 +44,8 @@ margin-left: auto;
 
 .image2 {
   display: block;
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: auto;
+  margin-right: auto;
   width: 20%;
 }
 
@@ -141,31 +127,20 @@ margin-left: 130%;
 		<button class="button button1" id="submit" onclick="checkAns()">Submit me!</button> <br><br><br>
 	</center>
   	<hr width = 200 color = "red" align = "center" ><br><br>
-	<span  id="answ"></span>
+	<span id="answ"></span>
   	
   	<script language="javascript" type = "text/javascript">
   		function checkAns(){
   			var ans = document.getElementById('txt1');
   			if(ans.value==="khushi"){
-  			document.getElementById("answ").innerHTML = '<a href="sixth.html"><div class="row">
-  <div class="column">
-    <img src="khushi2.jpeg" alt="Snow" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="khushi1.jpeg" alt="Forest" style="width:100%">
-
-  </div>
-</div></a>'
+  			document.getElementById("answ").innerHTML = '<a href="sixth.html"><img src="khushi2.jpeg" class="image2"></a>'
   			}
-  			else if(ans.value==="prashik"){
+  			else if(ans.value==="prasik"){
   				alert('Kitni baar')
   			}
-			else if(ans.value==="none"){
-  				alert('Whom are you kidding')
-  			}
 			else{
-				alert('Katega')
-			}
+  				alert('Katega')
+  			}
 
   		}
   	</script>
