@@ -11,6 +11,13 @@
   width: 50%;
 }
 
+.video {
+  display: block;
+  margin-left: 75%;
+  margin-right: auto;
+  width: 50%;
+}
+
 .button {
   border: none;
   color: white;
@@ -40,13 +47,6 @@ margin-left: auto;
   margin-left: 75%;
   margin-right: auto;
   width: 50%;
-}
-
-.image2 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 20%;
 }
 
 .overlay {
@@ -101,20 +101,23 @@ margin-left: 130%;
 </style>
 
 	<h1 align = "center"><i><u>Welcome to Sasta Segreta</u></i></h1>
-	
+	<h2 align = "center"><u>Q4</u></h2>
 	<br><br><br>
 
 
 	<div class="container">
-  <img src="beagle.jpg" class="image">
+  <video controls autoplay class = "video">
+    <source src="roti.mp4" type="video/mp4">
+  </video>
   <div class="overlay">
-    <div class="text">Mukta ke 4 gaalo ka raaz kya hai?</div>
+    <div class="text">Muk makes amazing of this. Very yumm</div>
   </div>
 
 <div class="overlay2">
-    <div class="text">Ye kaali kaali asakhe, ye Beagle jaise gaal</div>
+    <div class="text"></div>
   </div>
 </div>
+
 
 <br><br><br><br>
 <hr width = 400 color = "red" align = "center" ><br><br>
@@ -127,15 +130,17 @@ margin-left: 130%;
 		<button class="button button1" id="submit" onclick="checkAns()">Submit me!</button> <br><br><br>
 	</center>
   	<hr width = 200 color = "red" align = "center" ><br><br>
-	<span  id="answ"></span>
+	<span class = "center" id="answ"></span>
   	
   	<script language="javascript" type = "text/javascript">
   		function checkAns(){
   			var ans = document.getElementById('txt1');
-  			
-  			document.getElementById("answ").innerHTML = '<a href="sixth.html"><img src="baby.jpg" class="image2"></a>'
-  			
-			
+  			if(ans.value==="roti"){
+  			document.getElementById("answ").innerHTML = '<a href="pre-final.html"><button class="button2">Our lil masterchef and one woman army</button></a>'
+  			}
+  			else{
+  				alert('Its really yum')
+  			}
 
   		}
   	</script>
