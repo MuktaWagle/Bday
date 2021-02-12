@@ -101,7 +101,7 @@ margin-left: 130%;
 	<div class="container">
   <img src="scary.jpeg" class="image">
   <div class="overlay">
-    <div class="text">Kim Nam Joon....kay? Ting tang tung?</div>
+    <div class="text">Kim Nam Joon....what? Ting tang tung?</div>
   </div>
 
 <div class="overlay2">
@@ -126,8 +126,15 @@ margin-left: 130%;
   		function checkAns(){
   			var ans = document.getElementById('txt1');
   			
-  			document.getElementById("answ").innerHTML = '<a href="q1.html"><button class="button2">Sunanda Unnie rocks</button></a>'
   			
+			var ans = document.getElementById('txt1');
+  			if(ans.value==="sunanda"){
+  			document.getElementById("answ").innerHTML = '<a href="q1.html"><button class="button2">who else can say hehe :)</button></a>'
+  			}
+  			else{
+  				alert('our unnie rocks')
+  			}
+			
 
   		}
   	</script>
