@@ -106,15 +106,13 @@ margin-left: 130%;
 
 
 	<div class="container">
-   <video controls autoplay class = "video">
-    <source src="cute.mp4" type="video/mp4">
-  </video>
+   <img src="us.jpeg" class="image">
   <div class="overlay">
-    <div class="text">Is cuteness ka raaz kya hai?</div>
+    <div class="text">Did vaishnavi really watch Dear Zindagi?</div>
   </div>
 
 <div class="overlay2">
-    <div class="text">Don't let this cute face deceive you cuz she's pretty pretty savage</div>
+    <div class="text">Looks like she's arguing about it XD</div>
   </div>
 </div>
 
@@ -132,14 +130,13 @@ margin-left: 130%;
 	<span  id="answ"></span>
   	
   	<script language="javascript" type = "text/javascript">
-  		function checkAns(){
-  			var ans = document.getElementById('txt1');
-  			
-  			document.getElementById("answ").innerHTML = '<a href="q2.html"><img src="baby.jpeg" class="image2"></a>'
-  			
-			
-
-  		}
+  		var ans = document.getElementById('txt1');
+  			if(ans.value==="yes"){
+  			document.getElementById("answ").innerHTML = '<a href="q2.html"><button class="button2">Good gurl</button></a>'
+  			}
+  			else{
+  				alert("Try again. Be honest.")
+  			}
   	</script>
 <br><br><br><br><br><br><br><br><br>
 </body>
